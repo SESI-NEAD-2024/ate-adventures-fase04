@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Relacionamento com os profissionais" />
+    <meta name="author" content="SESI EAD" />
+    <title>FASE 4 | ATE Adventures</title>
+    <link rel="icon" type="image/png" href="src/img/core/Favicon.webp" />
+
+    <!-- Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/hgj6bzh.css" />
+
+    <!-- CSS -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="src/css/main.css"
+      media="screen"
+    />
+
+    <!-- Vue DEV MODE -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+
+    <!-- Vue PROD MODE -->
+    <script
+      rel="preconnect"
+      src="https://unpkg.com/vue@3/dist/vue.global.prod.js"
+    ></script>
+
+    <!-- Vue Router -->
+    <!-- <script src="https://unpkg.com/vue-router@4.2.0/dist/vue-router.global.js"></script> -->
+
+    <!-- Scorm JS -->
+    <script src="src/js/scorm/APIWrapper.js" defer></script>
+    <script src="src/js/scorm/SCOFunctions.js" defer></script>
+    <script src="src/js/scorm/scorm-app.js" defer></script>
+
+    <!-- Materialize JS -->
+    <script
+      type="text/javascript"
+      src="src/js/materialize/materialize.js"
+      defer
+    ></script>
+
+    <!-- AOS JS -->
+    <script
+      type="text/javascript"
+      src="src/js/aos-master/aos.js"
+      defer
+    ></script>
+
+    <!-- HystModal Modal JS-->
+    <link rel="stylesheet" href="src/css/hystmodal.min.css" />
+    <script src="src/js/hystmodal/hystmodal.min.js"></script>
+
+    <!-- YouTube IFrame Player API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <!--**************** App.js JS customizado aqui ****************-->
+    <script type="module" src="src/js/app.js"></script>
+
+    <!-- AOS Animation CSS-->
+    <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
+    <!-- HystModal Modal CSS-->
+    <link rel="stylesheet" href="src/css/hystmodal.min.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- loading ---------------------------------- -->
+      <div id="loading">
+        <div class="spinner"></div>
+      </div>
+      <div id="content">
+        <div class="gradient-01">
+          <!-- Navbar ---------------------------------- -->
+          <navbar></navbar>
+
+          <!-- Hero Banner ---------------------------------- -->
+          <hero>
+            <div>
+              <h2>FASE 4</h2>
+              <br />
+              <div
+                style="max-width: 750px; margin-left: auto; margin-right: auto"
+              >
+                <span class="display1" style="text-transform: uppercase"
+                  >Relacionamento com os profissionais</span
+                >
+              </div>
+              <div class="container--medium">
+                <div class="box-attention box-attention--image mt-144 mb-60">
+                  <div data-aos="fade-right" class="box-icon mr-24">
+                    <img src="./src/img/star.gif" alt="Star" loading="lazy" />
+                  </div>
+                  <h5 class="left-align">
+                    A função do ATE é contribuir para a consolidação da cultura
+                    da inovação e para o desenvolvimento e execução dos projetos
+                    que envolvem a educação tecnológica na unidade.
+                  </h5>
+                </div>
+              </div>
+              
+            </div>
+            ​</hero
+          >
+
+          <!-- PROFISSIONAIS ------------------------------------>
+          <div id="profissionais">
+            <div class="pt-80">
+              <div class="container--medium center-align">
+                <img
+                  data-aos="fade-down"
+                  src="src/img/plus.png"
+                  alt="+"
+                  loading="lazy"
+                  style="width: 100%; max-width: 60px"
+                  class="mb-24"
+                />
+                <h3 class="white-text">Uma nova descoberta!</h3>
+                <p class="white-text">
+                  Conheça os profissionais que fazem interface com a atuação do
+                  ATE em seu cotidiano!
+                </p>
+                <p class="white-text">Clique nos ícones para saber mais</p>
+              </div>
+            </div>
+
+            <div
+              class="sky-profissionais px-80 px-0-tablet pt-0-mobile pt-80-mobile pb-144-mobile"
+            >
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="col m4 s12 flex--align-center flex--column pt-40-mobile"
+                  >
+                    <div
+                      class="question-btn pointer mb-40 ml-96"
+                      data-hystmodal="#modal-1"
+                      data-aos="fade-up"
+                    ></div>
+                    <img
+                      src="src/img/profissional-1.png"
+                      alt="Conheça os profissionais que fazem interface com a atuação do ATE em seu cotidiano!"
+                      loading="lazy"
+                      style="max-width: 260px; width: 100%"
+                    />
+                  </div>
+                  <div
+                    class="col m4 s12 flex--align-center flex--column pt-80 pt-40-mobile"
+                  >
+                    <div
+                      class="question-btn pointer mb-40"
+                      data-hystmodal="#modal-2"
+                      data-aos="fade-up"
+                    ></div>
+                    <img
+                      src="src/img/profissional-2.png"
+                      alt="Conheça os profissionais que fazem interface com a atuação do ATE em seu cotidiano!"
+                      loading="lazy"
+                      style="max-width: 255px; width: 100%"
+                    />
+                  </div>
+                  <div
+                    class="col m4 s12 flex--align-center flex--column pt-40-mobile"
+                  >
+                    <div
+                      class="question-btn pointer mb-40 mr-96"
+                      data-hystmodal="#modal-3"
+                      data-aos="fade-up"
+                    ></div>
+                    <img
+                      src="src/img/profissional-3.png"
+                      alt="Conheça os profissionais que fazem interface com a atuação do ATE em seu cotidiano!"
+                      loading="lazy"
+                      style="max-width: 260px; width: 100%"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRÉ JOGO ------------------------------------>
+        <div id="missao" class="gradient-02 pb-80 ">
+          <img
+            src="src/img/city-bottom.png"
+            alt="Blocos"
+            loading="lazy"
+            class="game-divisor"
+          />
+          <div class="container--medium center-align mt-60">
+            <h3 class="center-align white-text stop-navbar">
+              Agora, você terá uma nova missão.
+            </h3>
+          </div>
+          <div class="star-bg center-align ">
+            <img
+            src="src/img/Missao.png"
+            alt="Agora, você terá uma nova missão."
+            loading="lazy"
+            class="mb-32 mt-40"
+            style="max-width: 400px; width: 95%;"
+          />
+          </div>
+          <div class="container--medium center-align ">
+            <p class="white-text">
+              Carregue o tablet e deixe-o pronto para que os professores possam usá-lo.
+               No entanto, para concluir sua tarefa,
+              você precisará se desviar dos obstáculos que aparecerão ao longo
+              do caminho.
+            </p>
+            <p class="white-text">Boa sorte!</p>
+          </div>
+        </div>
+        <div class="pontilhado-gradient" style="overflow: hidden">
+          <img
+            src="src/img/divider-02.png"
+            alt="divider-02"
+            loading="lazy"
+            class="game-divisor"
+          />
+        </div>
+
+        
+
+        <game-fase></game-fase>
+
+        <!-- Footer ---------------------------------- -->
+        <app-footer></app-footer>
+
+        <!-- Modal 1-->
+        <div class="hystmodal" id="modal-1" aria-hidden="true">
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align p-24">
+                <div class="flex--align-center flex--justify-between">
+                  <p class="m-0">
+                    <b>Pedagogo </b>
+                  </p>
+                  <div>
+                    <img
+                      data-hystclose
+                      class="modal-close pointer"
+                      src="src/img/close.png"
+                      alt="Close"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <p>
+                  O pedagogo participa de uma ampla variedade de atividades que
+                  envolvem questões de âmbito pedagógico, administrativo e
+                  relacional.
+                </p>
+                <p>
+                  A parceria entre o pedagogo e o ATE é essencial. Enquanto o
+                  ATE contribui com o conhecimento técnico sobre o uso das
+                  ferramentas tecnológicas, o pedagogo trabalha as necessidades
+                  educacionais. Essa parceria promove a sinergia entre os
+                  aspectos técnico e pedagógico, assegurando a intencionalidade
+                  e a assertividade em soluções tecnológicas e projetos
+                  educacionais que usem os instrumentos tecnológicos.
+                </p>
+                <p>
+                  Além disso, o pedagogo precisa acompanhar o apoio do ATE aos
+                  professores e ajudar a promover a aprendizagem efetiva com
+                  momentos de trocas e formação.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal 1-->
+
+        <!-- Modal 2-->
+        <div class="hystmodal" id="modal-2" aria-hidden="true">
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align p-24">
+                <div class="flex--align-center flex--justify-between">
+                  <p class="m-0">
+                    <b>Docente </b>
+                  </p>
+                  <div>
+                    <img
+                      data-hystclose
+                      class="modal-close pointer"
+                      src="src/img/close.png"
+                      alt="Close"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <p>
+                  O professor é o principal responsável por promover o
+                  aprendizado e o desenvolvimento integral dos estudantes.
+                </p>
+                <p>
+                  A parceria entre o professor e o ATE é fundamental para
+                  favorecer a interação dos estudantes com as tecnologias e
+                  estimular novas estratégias didáticas. Portanto, espera-se que
+                  o ATE possua papel ativo ao propor aos professores a
+                  integração da tecnologia ao plano de aula, de forma a romper
+                  com as barreiras técnicas que podem envolver o docente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal 2-->
+
+        <!-- Modal 3-->
+        <div class="hystmodal" id="modal-3" aria-hidden="true">
+          <div class="hystmodal__wrap">
+            <div class="container--medium" role="dialog" aria-modal="true">
+              <!-- BOX MODAL -->
+              <div class="box-attention left-align p-24">
+                <div class="flex--align-center flex--justify-between">
+                  <p class="m-0">
+                    <b>Analista NITE </b>
+                  </p>
+                  <div>
+                    <img
+                      data-hystclose
+                      class="modal-close pointer"
+                      src="src/img/close.png"
+                      alt="Close"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <p>
+                  O Analista de Projetos Educacionais do NITE participa de uma
+                  ampla variedade de atividades que envolvem a inserção da
+                  tecnologia na Educação Básica e acompanha tecnicamente as
+                  unidades in loco e à distância com o intuito de fomentar,
+                  implantar e acompanhar o uso de novas tecnologias nas escolas
+                  da Rede.
+                </p>
+                <p>
+                  O Analista do NITE vai acompanhar os ATEs de maneira
+                  regionalizada, orientando e apoiando esses profissionais para
+                  impulsionar o desenvolvimento e a execução de projetos que
+                  envolvam a educação tecnológica nas escolas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal 3-->
+      </div>
+    </div>
+  </body>
+</html>
