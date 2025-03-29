@@ -1,16 +1,4 @@
-// Só funciona 1 componente por página
-export default {
-  data() {
-    return {
-      items: [
-        {
-          id: 1,
-          img: "src/img/slide1.webp",
-          alt: "Adolescente no ambiente escolar",
-
-          
-          html://html 
-            `
+export default{data(){return{items:[{id:1,img:"src/img/slide1.webp",alt:"Adolescente no ambiente escolar",html:`
             <p
                 >
                   As mudanças educacionais têm revelado uma crescente
@@ -21,68 +9,14 @@ export default {
                   que incentivem o uso crítico, eficiente, ético e seguro das
                   tecnologias digitais.
                 </p>
-            `,
-        },
-        {
-          id: 2,
-          img: "src/img/slide2.webp",
-          alt: "Adolescente no ambiente escolar",
-
-          
-          html://html 
-            `
+            `},{id:2,img:"src/img/slide2.webp",alt:"Adolescente no ambiente escolar",html:`
             <p>
                   Essas habilidades integram um movimento de transformação que
                   visa desenvolver uma forma de pensar e agir que contribua para
                   o progresso da sociedade, além de proporcionar uma preparação
                   mais sólida dos estudantes para o mercado de trabalho.
                 </p>
-            `,
-        },
-        
-      ],
-      instances: null, // Declare instances as a reactive variable
-      qtdSlides: 0,
-      ordem: 1,
-    };
-  },
-  methods: {
-    next() {
-      document.querySelector(".previous").style.display = "flex";
-      this.instances[0].next(); // Access the first carousel instance
-    },
-    previous() {
-      this.instances[0].prev();
-    }
-  },
-  mounted() {
-    var elems = document.querySelectorAll(".carousel");
-    this.instances = M.Carousel.init(elems, {
-      fullWidth: true,
-      indicators: true,
-      shift: 20,
-      onCycleTo: (slide) => {
-        // Lógica para saber o slide atual
-        let search = slide.parentNode;
-        let slideIndex = [...search.children].indexOf(slide);
-        this.ordem = slideIndex;
-
-
-        // Se for o primeiro slide, não mostrar o botão anterior
-        if(this.ordem == 1){
-          document.querySelector(".previous").style.display = "none";
-
-        }
-        // console.log("Current slide:", this.ordem);
-      },
-    });
-    // this.qtdSlides = this.instances[0].count; // Set qtdSlides after initialization
-    document.querySelector(".previous").style.display = "none";
-  },
-
-  
-  template://html 
-  `
+            `}],instances:null,qtdSlides:0,ordem:1}},methods:{next(){document.querySelector(".previous").style.display="flex",this.instances[0].next()},previous(){this.instances[0].prev()}},mounted(){var e=document.querySelectorAll(".carousel");this.instances=M.Carousel.init(e,{fullWidth:!0,indicators:!0,shift:20,onCycleTo:e=>{e=[...e.parentNode.children].indexOf(e);this.ordem=e,1==this.ordem&&(document.querySelector(".previous").style.display="none")}}),document.querySelector(".previous").style.display="none"},template:`
     <!-- Carousel -->
     <div class="p-24 carousel carousel-slider carousel-02 center">
       <!-- Arrows -->
@@ -109,5 +43,4 @@ export default {
       
     </div>
     <!-- Fim Carousel -->
-  `,
-};
+  `};
